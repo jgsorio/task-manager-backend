@@ -1,13 +1,16 @@
 {
-  "name": "task-manager",
+  "name": "task-manager-api",
   "version": "1.0.0",
-  "description": "Task Manager App",
+  "description": "Task Manager API",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "José Guilherme",
+    "email": "joseguilhermesorio@gmail.com"
+  },
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
