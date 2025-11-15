@@ -1,12 +1,12 @@
 require('dotenv/config');
 const express = require('express');
 const connectToDatabase = require('./src/database/mongoose.database'); 
+const taskRoutes = require('./src/routes/task.route');
 
 const app = express();
 connectToDatabase();
 
-app.get('/', (req, res) => {
-    res.status(200).send("Hello, World!");
-});
+app.use(express.json());
+app.use('/api/tasks', taskRoutes);
 
 app.listen(8000, () => console.info('listening on port 8000'));
